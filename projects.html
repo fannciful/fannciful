@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">  
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css" />
+</head>
+
+<body>
+    <section id="product">
+        <div class="container">
+            <h1>My Projects</h1>
+            <div class="controls">
+                <button type="button" class="control" data-filter="all">ALL</button>
+                <button type="button" class="control" data-filter=".app">
+            App
+          </button>
+                <button type="button" class="control" data-filter=".designs">
+            Designs
+          </button>
+            </div>
+            <div class="products">
+                <div class="mix app">
+                    <img src="img/app.png" alt="Shoe" />
+                </div>
+                <div class="mix designs">
+                    <img src="img/arc site.png" alt="Shoe" />
+                </div>
+                <div class="mix app">
+                    <img src="img/cour_app.png" alt="Shoe" />
+                </div>
+                <div class="mix designs">
+                    <img src="img/fash_figma.png" alt="Shoe" />
+                </div>
+                <div class="mix designs">
+                    <img src="img/figma_2.png" alt="Shoe" />
+                </div>
+                <div class="mix designs">
+                    <img src="img/tour_figma.png" alt="Shoe" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="mixitup.min.js"></script>
+    <script>
+        var products = document.querySelector('.products');
+        var mixer = mixitup(products);
+    </script>
+</body>
+
+</html>
